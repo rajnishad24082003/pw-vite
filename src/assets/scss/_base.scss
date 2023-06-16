@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$theme-light-shades: #fbf9fa;
+$theme-light-accent: #7c8baf;
+$theme-brand: #1f2358;
+$theme-dark-accent: #df698a;
+$theme-dark-shades: #151119;
+$theme-success: #468d55;
+$theme-warning: #c37c1d;
+$theme-danger: #f44336;
+
+body {
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: $theme-light-shades;
+	color: $theme-dark-shades;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Raleway", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	color: $theme-brand;
+    b, strong{
+        font-weight: 600;
+    }
+}
+h1 {
+	font-size: 4vw;
+}
+h2 {
+	font-size: 2.5rem;
+}
+
+[disabled] {
+	pointer-events: none;
+	cursor: default;
+	filter: grayscale(1) opacity(0.3);
+}
+
+main {
+	section {
+		padding: 5% 0;
+		.section-title {
+			h2 {
+				font-size: 3rem;
+			}
+		}
+	}
+}
+
+
+/* THEME */
+.btn {
+	border-radius: 0;
+	padding: 0.5rem 1rem;
+	&.btn-theme-brand {
+		background-color: $theme-brand;
+		color: $theme-light-shades;
+		&:focus,
+		&:active {
+			color: $theme-light-shades;
+			background-color: darken($color: $theme-brand, $amount: 5);
+		}
+	}
+	&.btn-theme-light-accent {
+		background-color: $theme-light-accent;
+		&:focus,
+		&:active {
+			color: $theme-light-shades;
+			background-color: darken($color: $theme-light-accent, $amount: 5);
+		}
+		color: $theme-light-shades;
+	}
+	&.btn-theme-dark-accent {
+		background-color: $theme-dark-accent;
+		color: $theme-light-shades;
+		&:focus,
+		&:active {
+			color: $theme-light-shades;
+			background-color: darken($color: $theme-dark-accent, $amount: 5);
+		}
+	}
+}

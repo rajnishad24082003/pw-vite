@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59.709" height="51.219" viewBox="0 0 59.709 51.219">
+  <g id="Group_50" data-name="Group 50" transform="translate(-212.001 -1752.5)">
+    <g id="Group_3" data-name="Group 3" transform="translate(233.998 1764.023)">
+      <path id="Union_1" data-name="Union 1" d="M16.934,29.332H6.5a6.5,6.5,0,0,1-6.5-6.5V6.5A6.5,6.5,0,0,1,6.5,0H31.212a6.5,6.5,0,0,1,6.5,6.5V22.832a6.5,6.5,0,0,1-6.5,6.5H27.395c.025,3.583-.1,10.365-.1,10.365Z" transform="translate(0 0)" fill="#1e2358"/>
+      <line id="Line_2" data-name="Line 2" x2="21.999" transform="translate(7.857 8.381)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_3" data-name="Line 3" x2="21.999" transform="translate(7.857 14.666)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+      <line id="Line_4" data-name="Line 4" x2="21.999" transform="translate(7.857 20.951)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    </g>
+    <path id="Subtraction_1" data-name="Subtraction 1" d="M10.412,39.7v0c0-.068-.12-6.835-.1-10.363H6.5a6.507,6.507,0,0,1-6.5-6.5V6.5A6.507,6.507,0,0,1,6.5,0H31.211a6.508,6.508,0,0,1,6.5,6.5V9.428H27.9a8.009,8.009,0,0,0-8,8V30.208L10.414,39.7Z" transform="translate(212.001 1752.5)" fill="#1e2358"/>
+  </g>
+</svg>
