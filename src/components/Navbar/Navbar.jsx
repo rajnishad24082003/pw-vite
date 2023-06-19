@@ -1,20 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/media/logo.svg";
 const Navbar = () => {
   return (
     <>
-      <div className="contact_minibar">
+      <div className="contact_minibar nav_man">
         <div className="row m-0 g-0 justify-content-between">
           <div className="col-auto">
             <ul className="nav">
               <li className="nav-item">
-                <a href="#" className="nav-link" target="_blank">
+                <a
+                  to="https://wa.me/+917777009971"
+                  rel="noreferrer"
+                  className="nav-link"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-whatsapp link-icon-left"></i>
                 </a>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link" target="_blank">
+                <a
+                  to="tel:+917777009971"
+                  className="nav-link"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <i className="fa-solid fa-phone link-icon-left"></i>
+                  <span className="d-none d-md-inline">+917777009971</span>
+                </a>
+              </li>
+              <li className="nav-item d-none d-md-inline">
+                <a
+                  to="mailto:connect@iriquehitech.com"
+                  rel="noreferrer"
+                  className="nav-link"
+                  target="_blank"
+                >
+                  <i className="fa-solid fa-envelope link-icon-left"></i>
+                  <span className="d-none d-md-inline">
+                    connect@iriquehitech.com
+                  </span>
                 </a>
               </li>
             </ul>
@@ -22,7 +47,10 @@ const Navbar = () => {
           <div className="col-auto">
             <ul className="nav">
               <li className="nav-item">
-                <a href="#" className="nav-link">
+                <a
+                  to="https://iriquehitech.com/put-enquiry"
+                  className="nav-link"
+                >
                   <i className="fa-solid fa-envelope link-icon-left"></i>Request
                   a Free Demo
                 </a>
@@ -31,11 +59,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg  ">
         <div className="container">
-          <a className="navbar-brand" href="#">
-            {/* <img src="/src/assets/react.svg" height="80" alt="" /> */}
-          </a>
+          <Link className="navbar-brand" to="#">
+            <img src={logo} height="80" alt="" />
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -50,73 +78,73 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/about">
+                <Link className="nav-link" to="/about">
                   About&nbsp;Us
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Our Products
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="/products/all">
+                    <Link className="dropdown-item" to="/products/all">
                       <i className="fa-solid fa-caret-right link-icon-left"></i>
                       Payroll Outsourcing
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/products/hrms">
+                    <a className="dropdown-item" to="/products/hrms">
                       <i className="fa-solid fa-caret-right link-icon-left"></i>
                       Human Resource Management Software
                     </a>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       <i className="fa-solid fa-caret-right link-icon-left"></i>
                       HRMS on Cloud (SAAS)
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/products/pms">
+                    <Link className="dropdown-item" to="/products/pms">
                       <i className="fa-solid fa-caret-right link-icon-left"></i>
                       Payroll Management Software
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" to="#">
                       <i className="fa-solid fa-caret-right link-icon-left"></i>
                       Product 1
-                    </a>
+                    </Link>
                   </li>
                   {/* <li><hr className="dropdown-divider"></li> */}
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" href="#">
+                <Link className="nav-link disabled" to="#">
                   Downloads
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" href="#">
+                <Link className="nav-link disabled" to="#">
                   Pricing
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/faq">
+                <Link className="nav-link" to="/faq">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">
@@ -124,10 +152,10 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item enquiry">
-                <a className="nav-link btn btn-theme-brand" href="#">
+                <Link className="nav-link btn btn-theme-brand" to="#">
                   <i className="fa-solid fa-envelope link-icon-left"></i>Place
                   an Enquiry
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

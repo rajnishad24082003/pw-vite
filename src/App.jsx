@@ -2,7 +2,8 @@ import About from "./pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import "./App.css";
-import "./assets/scss/style.scss";
+import "./assets/scss/style.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import FAQPage from "./pages/Faq";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
@@ -10,6 +11,9 @@ import Footer from "./components/Footer/Footer";
 import All from "./components/Products/All";
 import Hrms from "./components/Products/Hrms";
 import Pms from "./components/Products/Pms";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function App() {
   return (
